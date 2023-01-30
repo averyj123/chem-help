@@ -97,6 +97,7 @@ let nums = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
 function getList() {
    //get molecule thing
+   let molecule = window.prompt('what is the molecule?');
    let comps = [];
    let comp = ""
    for(let i=0; i<molecule.length; i++) {
