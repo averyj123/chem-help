@@ -153,8 +153,7 @@ concButton.addEventListener('click', getConc);
 
 function getMoles() {
    let mass =getMolar();
-   let grams = getVal('how many grams?')
-   //let grams = window.prompt('how many grams?')
+   let grams = window.prompt('how many grams?')
    window.alert(`Molar mass: ${mass} \n number of moles: ${grams/mass}`)
    window.alert(input);
 }

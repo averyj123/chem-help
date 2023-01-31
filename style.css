@@ -10,11 +10,11 @@
    align-items: center;
    height: 100px;
    background-color: rgb(120, 213, 120);
-   
+   justify-content: center;
 }
 
 h1 {
-   width: 100%;
+   padding:10px;
    color: white;
    text-align: center;
    font-family: Barlow;
@@ -48,4 +48,10 @@ button:hover {
    cursor:pointer;
    background-color: rgb(109, 193, 109);
    border-color: rgb(109, 193, 109);
+}
+#hello{
+   background: transparent;
+   color: white;
+   align-self:center;
+   background-color:blue;
 }
