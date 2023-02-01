@@ -14,12 +14,15 @@
 }
 
 h1 {
-   padding:10px;
+   margin:10px;
    color: white;
    text-align: center;
+   vertical-align: middle;
+   height: 45px;
    font-family: Barlow;
    font-weight: 800;
    background-color: rgb(120, 213, 120);
+   user-select: none;
 }
 
 .buttons {
@@ -48,10 +51,10 @@ button:hover {
    cursor:pointer;
    background-color: rgb(109, 193, 109);
    border-color: rgb(109, 193, 109);
+   font-weight: 700;
 }
 #hello{
    background: transparent;
    color: white;
    align-self:center;
-   background-color:blue;
 }
