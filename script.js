@@ -3,6 +3,9 @@ let molButton = document.getElementById('moles');
 let gramButton = document.getElementById('grams');
 
 
+
+
+
 const elements = {
    H: 1.008,
    Li: 6.94,
@@ -159,3 +162,15 @@ function getMoles() {
 }
 gramButton.addEventListener('click', getMoles);
 
+Swal.fire({
+  title: 'Enter whatever',
+  input: 'text',
+  inputLabel: 'whatever',
+  showCancelButton: true,
+  inputValidator: (value) => {
+    if (!value) {
+      return 'bruh write something'
+    } else {
+    }
+  }
+})
