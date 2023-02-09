@@ -3,6 +3,12 @@ let molButton = document.getElementById('moles');
 let gramButton = document.getElementById('grams');
 
 
+const { value: email } = await Swal.fire({
+  title: 'Input email address',
+  input: 'email',
+  inputLabel: 'Your email address',
+  inputPlaceholder: 'Enter your email address'
+})
 
 
 
@@ -136,8 +142,10 @@ function getMolar(molecule) {
    }
    return molarMass;
 }
-
 function getGrams(molecule) {
+   Swal.fire({
+   title: 'hello'
+});
    Swal.fire({
   title: 'Enter moles',
   input: 'text',
@@ -165,8 +173,6 @@ function finalGrams() {
   inputValidator: (value) => {
     if (!value) {
       return 'bruh write something'
-    } else {
-      getGrams(molecule)
     }
   }
 })
@@ -189,16 +195,3 @@ function getMoles() {
    window.alert(input);
 }
 gramButton.addEventListener('click', getMoles);
-
-Swal.fire({
-  title: 'Enter whatever',
-  input: 'text',
-  inputLabel: 'whatever',
-  showCancelButton: true,
-  inputValidator: (value) => {
-    if (!value) {
-      return 'bruh write something'
-    } else {
-    }
-  }
-})
