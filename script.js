@@ -124,6 +124,7 @@ function getMolar() {
             molarMass += (elements[isolMol] * amount);
          } else {
             window.alert('error: element not found');
+            return false;
          }
       } else if (elements[components[i]]){
          molarMass += elements[components[i]];
@@ -136,24 +137,30 @@ function getMolar() {
 
 function getGrams() {
    let mass = getMolar();
-   let moles = Number(window.prompt('how many moles are there?'));
-   window.alert(`molar mass: ${mass} \n GRAMS: ${mass * moles}`);
+   if(mass){
+      let moles = Number(window.prompt('how many moles are there?'));
+      window.alert(`molar mass: ${mass} \n GRAMS: ${mass * moles}`);
+   }
 }
 molButton.addEventListener('click', getGrams);
 
 function getConc() {
    let mass = getMolar();
-   let concen = window.prompt('what is the concentration?');
-   let vol = window.prompt('what is the volume? (liters)');
-   let moles = concen * vol;
-   window.alert(`molar mass: ${mass} \n moles: ${moles} \nGRAMS: ${moles*mass}`);
+   if(mass){
+      let concen = window.prompt('what is the concentration?');
+      let vol = window.prompt('what is the volume? (liters)');
+      let moles = concen * vol;
+      window.alert(`molar mass: ${mass} \n moles: ${moles} \nGRAMS: ${moles*mass}`);
+   } 
 }
 concButton.addEventListener('click', getConc);
 
 function getMoles() {
    let mass =getMolar();
-   let grams = window.prompt('how many grams?')
-   window.alert(`Molar mass: ${mass} \n number of moles: ${grams/mass}`)
-   window.alert(input);
+   if(mass){
+      let grams = window.prompt('how many grams?')
+      window.alert(`Molar mass: ${mass} \n number of moles: ${grams/mass}`)
+      window.alert(input);
+   }
 }
 gramButton.addEventListener('click', getMoles);
