@@ -11,6 +11,7 @@
    height: 100px;
    background-color: rgb(120, 213, 120);
    justify-content: center;
+   margin: 0;
 }
 
 h1 {
@@ -31,13 +32,13 @@ h1 {
    justify-content: space-evenly;
    flex-direction: column;
    margin: 20px;
-   width: 100%;
    align-items: center;
    }
+
 .buttons button {
    margin: 10px;
    padding: 20px;
-   width: 350px;
+   width: 300px;
    background-color: rgb(120, 213, 120);
    border: 3px solid rgb(120, 213, 120);
    border-radius: 20px;
